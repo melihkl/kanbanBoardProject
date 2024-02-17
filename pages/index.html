@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+
+  <body>
+    <div class="baslik">
+      <h1>Kanban Board</h1>
+    </div>
+    <div class="sidebar">
+      <a href="new.html" id="new">Yeni Kayıt/Görev</a>
+      <a href="#">Yapılacaklar</a>
+      <a href="calendar.html">Takvim</a>
+    </div>
+    <div class="main">
+      <div class="todo" draggable="true">TODO</div>
+      <div class="progress" draggable="true">PROGRESS</div>
+      <div class="done" draggable="true">DONE</div>
+    </div>
+
+    <script src="../scripts/listScript.js"></script>
+    <script src="../scripts/update.js"></script>
+  </body>
+</html>

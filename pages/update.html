@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../styles/update.css" />
+  </head>
+
+  <body>
+    <div class="baslik">
+      <h1>Kanban Board</h1>
+    </div>
+
+    <div class="new">
+      <form action="#">
+        <h2>Kayıt/Görev Güncelle</h2>
+        <label>Tanım/Görev/Başlık</label>
+        <div class="input-box">
+          <input type="text" class="tanim" id="tanim" value="" />
+        </div>
+        <label>Açıklama/Detay</label>
+        <div class="input-box">
+          <textarea class="aciklama" id="aciklama"></textarea>
+        </div>
+        <label>Tarih</label>
+        <div class="input-box">
+          <input type="date" id="tarih" name="date" class="tarih" />
+        </div>
+
+        <div class="input-box status">
+          <label>Durum</label>
+          <div class="select-box">
+            <select class="status-info">
+              <option hidden>Seçiniz</option>
+              <option value="To Do">To Do</option>
+              <option value="Progress">Progress</option>
+              <option value="Done">Done</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="updateBtn" id="updateBtn">Güncelle</button>
+      </form>
+    </div>
+
+    <script src="../scripts/update.js"></script>
+  </body>
+</html>

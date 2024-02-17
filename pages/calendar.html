@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../styles/calendar.css" />
+  </head>
+
+  <body>
+    <div class="baslik">
+      <h1>Takvim</h1>
+    </div>
+    <div class="sidebar">
+      <a href="new.html" id="new">Yeni Kayıt/Görev</a>
+      <a href="index.html">Yapılacaklar</a>
+      <a href="#">Takvim</a>
+    </div>
+
+    <div class="calendar">
+      <div class="header">
+        <button id="prevBtn">
+          <i class="left"><</i>
+        </button>
+        <div class="monthYear" id="monthYear"></div>
+        <button id="nextBtn">
+          <i class="right">></i>
+        </button>
+      </div>
+
+      <div class="days">
+        <div class="day">Pzt</div>
+        <div class="day">Sal</div>
+        <div class="day">Çrş</div>
+        <div class="day">Prş</div>
+        <div class="day">Cum</div>
+        <div class="day">Cmt</div>
+        <div class="day">Pz</div>
+      </div>
+      <div class="dates" id="dates"></div>
+    </div>
+
+    <div class="removeTask">
+      <button id="remove">Listeyi Temizle</button>
+    </div>
+
+    <div id="tasks"></div>
+
+    <script src="../scripts/calendar.js"></script>
+  </body>
+</html>

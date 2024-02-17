@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="../styles/new.css" />
+  </head>
+
+  <body>
+    <div class="baslik">
+      <h1>Kanban Board</h1>
+    </div>
+    <div class="sidebar">
+      <a href="#" id="new">Yeni Kayıt/Görev</a>
+      <a href="index.html">Yapılacaklar</a>
+      <a href="calendar.html">Takvim</a>
+    </div>
+
+    <div class="new">
+      <form action="#">
+        <h2>Yeni Kayıt/Görev</h2>
+        <label>Tanım/Görev/Başlık</label>
+        <div class="input-box">
+          <input type="text" class="tanim" id="tanim" />
+        </div>
+        <label>Açıklama/Detay</label>
+        <div class="input-box">
+          <textarea class="aciklama" id="aciklama"></textarea>
+        </div>
+        <label>Tarih</label>
+        <div class="input-box">
+          <input type="date" id="tarih" name="date" class="tarih" />
+        </div>
+
+        <div class="input-box status">
+          <label>Durum</label>
+          <div class="select-box">
+            <select class="status-info">
+              <option hidden>Seçiniz</option>
+              <option>To Do</option>
+              <option>Progress</option>
+              <option>Done</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="saveBtn">Kaydet</button>
+      </form>
+    </div>
+
+    <script src="../scripts/newScript.js"></script>
+  </body>
+</html>

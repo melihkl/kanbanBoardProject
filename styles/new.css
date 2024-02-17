@@ -1,0 +1,72 @@
+@import "index.css";
+
+.new {
+  margin-left: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.new .input-box {
+  position: relative;
+  width: 100%;
+  background: transparent;
+}
+
+.input-box input {
+  width: 250px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  padding: 2px 10px;
+}
+
+.new .saveBtn {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: #3498db;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  float: right;
+}
+.tanim {
+  height: 30px;
+}
+
+.aciklama {
+  width: 250px;
+  height: 200px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  padding: 2px 10px;
+}
+label {
+  color: #333;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 2px solid #ddd;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+}
+
+.status :where(input, .select-box) {
+  margin-top: 10px;
+}

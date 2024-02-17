@@ -1,0 +1,118 @@
+.baslik {
+  text-align: center;
+}
+
+.main {
+  margin-left: 210px;
+  display: flex;
+}
+
+.todo,
+.progress,
+.done {
+  float: left;
+  text-align: center;
+  width: 200px;
+  height: 580px;
+  border: 2px solid #ddd;
+  overflow: auto;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.tanim-text,
+.aciklama-text,
+.tarih-text,
+.durum-text {
+  float: left;
+  clear: left;
+  padding: 2%;
+}
+
+.tanim-text {
+  text-align: center;
+  border: 1px solid #ddd;
+  width: 150px;
+}
+
+.aciklama-text {
+  text-align: justify;
+}
+
+.durum-text {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 120px;
+  color: white;
+}
+
+.list-box {
+  margin: 10px;
+  border: 2px solid #ddd;
+  width: 160px;
+  min-height: 15vh;
+  cursor: grab;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.sil {
+  margin-top: 35px;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #f25252;
+  color: #ffffff;
+}
+
+.duzenle {
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #3e9df5;
+  color: #ffffff;
+}
+
+/*
+.sil {
+  float: right;
+}
+*/
+/*
+.listPageTodo {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.listPageTodo li {
+  padding: 5px;
+  display: inline-block;
+  margin: 0 5px;
+}
+*/

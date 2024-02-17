@@ -1,0 +1,174 @@
+@import "index.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 90vh;
+  justify-content: center;
+}
+
+.calendar {
+  width: 450px;
+  margin-left: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.date.active,
+.date:hover,
+.date.event.active {
+  color: black;
+  background-color: #ff5869;
+}
+
+.date.inactive {
+  color: #d2d2d2;
+}
+
+.date.event {
+  background-color: orange;
+}
+
+/*
+.task-box {
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  margin-left: 330px;
+  width: 400px;
+}
+
+label {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.tanimList,
+.aciklamaList,
+.durumList {
+  display: inline-block;
+}
+
+*/
+/*
+#task-box {
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  margin-left: 330px;
+  width: 400px;
+}
+
+label {
+  display: inline-block;
+  padding: 5px;
+}
+
+.block-one,
+.block-two,
+.block-three {
+  display: block;
+}
+
+.block-one-tanim {
+  display: inline-block;
+}
+
+.tanimList,
+.aciklamaList,
+.durumList {
+  display: inline-block;
+}
+*/
+
+.task-box {
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  margin-left: 330px;
+  width: 400px;
+}
+
+label {
+  display: inline-block;
+  padding: 5px;
+}
+
+.block {
+  display: inline-block;
+}
+
+.tnmL,
+.ackL,
+.drmL {
+  display: inline-block;
+}
+
+.removeTask {
+  margin-left: 600px;
+}
+
+#remove {
+  border-radius: 20px;
+  background: #3498db;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 25px;
+  margin: 10px;
+  cursor: pointer;
+}

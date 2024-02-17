@@ -1,0 +1,15 @@
+{
+  "name": "electronproject",
+  "productName": "Kanban Board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build" :"electron-packager . --asar --platform=darwin --icon=assets/icons.png"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-packager": "^17.1.2"
+  }
+}
