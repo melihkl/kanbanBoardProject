@@ -25,7 +25,7 @@ app.on("ready", () => {
       slashes: true,
     })
   );
-
+/*
   var arr = [];
   fs.existsSync("data.json", function(exist){
     if(!exist){    
@@ -34,7 +34,18 @@ app.on("ready", () => {
       })
     }
   });
-  
+  */
+
+   //dosya yoksa yeni kayit dosyasi olusturma
+  var arr = [];
+  fs.readFile("data.json", (err, data) => {
+    if (err) {
+      console.log("Config file doesnot exist, creationg one.");
+      fs.writeFile("data.json", JSON.stringify(arr), "utf-8", (err) => {
+        console.log(err);
+      });
+    }
+  });
  
 
   //kaydetme islemi
