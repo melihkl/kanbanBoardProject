@@ -12,10 +12,13 @@ It consists of 3 stages: To Do, Progress and Done. A calendar is also included s
 
 ## Drag&Drop
 
+https://github.com/melihkl/kanbanBoardProject/assets/59390060/a8206ffb-a9f6-40f0-b854-de2c941cab9c
 
+## Calendar
 
+https://github.com/melihkl/kanbanBoardProject/assets/59390060/e996f800-f84d-444a-aef4-fad4e0e75aa0
 
-
+In addition to the above features, there are also delete and update operations.
 
 # Prerequisites And Run
 In order to run this application you need to install:
