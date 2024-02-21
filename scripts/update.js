@@ -42,7 +42,10 @@ function duzenleme() {
           ]);
           setTimeout(() => {
             infoPage.close();
-          }, 1000);
+          }, 500);
+          setTimeout(function () {
+            location.reload();
+          }, 600);
         });
       });
     });
