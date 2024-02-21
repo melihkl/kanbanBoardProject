@@ -40,7 +40,7 @@ app.on("ready", () => {
   var arr = [];
   fs.readFile("data.json", (err, data) => {
     if (err) {
-      console.log("Config file doesnot exist, creationg one.");
+      console.log("Config file doesnot exist, creating one.");
       fs.writeFile("data.json", JSON.stringify(arr), "utf-8", (err) => {
         console.log(err);
       });
