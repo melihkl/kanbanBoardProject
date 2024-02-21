@@ -145,13 +145,6 @@ function listeleme() {
   let s;
   let fulTarih;
 
-  /*
-  var tt = document.createElement("task-box");
-  var tnmL = document.createElement("block-one");
-  var ackL = document.createElement("block-two");
-  var drmL = document.createElement("block-three");
-*/
-
   for (b of btn) {
     b.addEventListener("click", function (e) {
       let gun = e.target.innerHTML;
